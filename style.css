@@ -1,0 +1,375 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 99%;
+    background-color: black;
+}
+
+.navbar {
+    background-color: black;
+}
+
+#card-body {
+    background-color: black;
+}
+
+.cont,.container{
+    background-color: black;
+    display: flex;
+    width: 100%;
+}
+
+[class *= flex-cont] {
+    width: 50%;
+}
+
+.flex-cont1 img {
+    height: 42rem;
+}
+
+#card-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: cornsilk;
+    margin-top: 8rem;
+}
+
+@keyframes reveal {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+.reveal-text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: reveal 4s steps(40, end); /* Adjust duration (5s) and steps as needed */
+}
+
+#card-subtitle {
+    font-family: cursive;
+    font-size: 1.4rem;
+    text-align: justify;
+    color: azure;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+
+.socialbtn {
+    display: flex; /* Use flexbox for layout */
+    gap: 10px; /* Adjust the gap between icons */
+}
+
+.socialbtn i {
+    font-size: 35px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border: 2px solid white; /* Add a 2px solid white border */
+    padding: 5px; /* Optional: Add padding around the icons */
+    border-radius: 20%;
+}
+
+.flex-cont3 img{
+    height: 500px;
+    width: 380px;
+    margin-top: 5rem;
+    margin-left: 15rem;
+    margin-bottom: 10rem;
+    border-radius: 10%;
+}
+
+.flex-cont4 {
+    margin-top: 5rem;
+}
+
+.flex-cont4 h2  {
+    color: blueviolet;
+    font-size: 3rem;
+}
+
+.flex-cont4 h5 {
+    text-align: justify;
+}
+
+.flex-cont4 .see {
+    display: flex;
+    gap: 7rem;
+}
+
+.flex-cont4 .see p{
+    color: blueviolet;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: blueviolet;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+    color: #9ca3af;
+}
+
+.tab-contents.active-content {
+    display: block;
+}
+
+.tab-contents ul {
+    list-style: none;
+    padding: 0; 
+}
+
+.tab-contents ul li {
+    margin: 10px 0;
+    color: #9ca3af;
+}
+
+.tab-contents ul li:last-child {
+    margin-right: 0;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+#projects {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: blueviolet;
+    margin-top: 6rem;
+}
+
+#Tech {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: blueviolet;
+}
+
+#awards {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: blueviolet;
+    margin-top: 30rem;
+}
+
+/* @keyframes reveal {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+.reveal-text2 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: reveal 5s steps(40, end); 
+} */
+
+#project-heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: cornsilk;
+    margin-top: 4rem;
+}
+
+[id*=carouselExampleDark] {
+    width: 60rem;
+    height: 10rem;
+}
+
+#picture-margin {
+    margin-left: 15rem;
+    border-radius: 10px;
+}
+
+#page-title {
+    background-color: hsl(341, 22%, 51%);
+    color: cornsilk;
+    display: inline;
+}
+
+#car-btn {
+    background-color: blue;
+}
+
+.carousel-control-next {
+    justify-content: flex-end; /* Align items to the end (right side) */
+    position: absolute;
+    right: 0;
+    left: 30%;
+}
+
+.carousel-control-next2 {
+    justify-content: flex-end; /* Align items to the end (right side) */
+    right: 0;
+    left: 30%;
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+
+.carousel-control-next3 {
+    justify-content: flex-end; /* Align items to the end (right side) */
+    right: 0;
+    left: 30%;
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+
+.carousel-control-next-icon {
+    background-color: blue;
+    margin-right: 5rem;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.jsgames {
+    margin-top: 30rem;
+}
+
+.award {
+    margin-top: 15rem;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+    transform-style: preserve-3d; /* Ensure 3D space for better animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+  }
+
+  .card1:hover {
+    transform: translateY(-10px); /* Move card forward on hover */
+    box-shadow: 0 16px 32px rgba(202, 191, 191, 0.2); /* Enhance shadow on hover */
+  }
+
+  .card-img-top {
+    object-fit: contain;
+    padding-top: 10px;
+    height: 150px;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+#contact {
+    margin-top: 30rem;
+    color: cornsilk;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 65%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: #ff004f;
+    color: #fff;
+}
+
+.btn.btn3 {
+    background: #ff004f;
+    margin-top: 2rem;
+    margin-right: 10rem;
+    color: #fff;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form textarea , #input{
+    width: 80%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.carousel-control-next {
+    right: 10%; /* Adjust this value to position the control */
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: blue; /* Adjust background color */
+    width: 2rem;
+    height: 2rem;
+}
