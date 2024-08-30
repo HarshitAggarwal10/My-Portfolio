@@ -47,7 +47,7 @@ body{
 .reveal-text {
     overflow: hidden;
     white-space: nowrap;
-    animation: reveal 4s steps(40, end); /* Adjust duration (5s) and steps as needed */
+    animation: reveal infinite; /* Adjust duration (5s) and steps as needed */
 }
 
 #card-subtitle {
